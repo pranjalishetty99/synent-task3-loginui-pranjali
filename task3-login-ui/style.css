@@ -3,15 +3,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #f2f2f2;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    margin: 0;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -21,6 +15,34 @@ input {
     width: 300px;
     text-align: center;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    color: gray;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
 }
 
 button {
@@ -31,16 +53,11 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 button:hover {
     background: #0056b3;
-}
-
-p {
-    color: blue;
-    cursor: pointer;
-    font-size: 14px;
 }
 
 ::placeholder {
